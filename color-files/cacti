@@ -1,0 +1,48 @@
+#!/bin/sh
+
+## Define a list of overly complicated RGB colors because I'm a sperg ##
+cactus1=$'\e[48;2;26;255;64m'    ## HEX - #1aff40 ##
+cactus2=$'\e[48;2;77;255;107m'   ## HEX - #4dff6b ##
+cactus3=$'\e[48;2;52;255;85m'    ## HEX - 34ff55  ##
+cactus4=$'\e[48;2;103;255;128m'  ## HEX - 67ff80  ## 
+barb=$'\e[48;2;220;220;220m'  ## HEX - dcdcdc  ##
+clear=$'\e[0m'                ## Blank space   ##
+lnend=$'\e[0m'              ## Blank space used to signify end of sprite
+                             # in a single line.
+
+## Draw pixel art using spaced and defined background colors ##
+
+echo -e " 
+  $clear      $cactus1    $clear      $lnend  \
+$clear      $cactus2    $clear      $lnend  \
+$clear      $cactus3    $clear      $lnend  \
+$clear      $cactus4    $clear      $lnend
+  $clear    $cactus1    $barb  $cactus1  $clear    $lnend  \
+$clear    $cactus2    $barb  $cactus2  $clear    $lnend  \
+$clear    $cactus3    $barb  $cactus3  $clear    $lnend  \
+$clear    $cactus4    $barb  $cactus4  $clear    $lnend  
+  $cactus1  $clear  $cactus1  $barb  $cactus1    $clear  $cactus1  $lnend  \
+$cactus2  $clear  $cactus2  $barb  $cactus2    $clear  $cactus2  $lnend  \
+$cactus3  $clear  $cactus3  $barb  $cactus3    $clear  $cactus3  $lnend  \
+$cactus4  $clear  $cactus4  $barb  $cactus4    $clear  $cactus4  $lnend  
+  $cactus1  $clear  $cactus1    $barb  $cactus1  $clear  $cactus1  $lnend  \
+$cactus2  $clear  $cactus2    $barb  $cactus2  $clear  $cactus2  $lnend  \
+$cactus3  $clear  $cactus3    $barb  $cactus3  $clear  $cactus3  $lnend  \
+$cactus4  $clear  $cactus4    $barb  $cactus4  $clear  $cactus4  $lnend
+  $clear  $cactus1  $barb  $cactus1    $barb  $cactus1  $clear  $lnend  \
+$clear  $cactus2  $barb  $cactus2    $barb  $cactus2  $clear  $lnend  \
+$clear  $cactus3  $barb  $cactus3    $barb  $cactus3  $clear  $lnend  \
+$clear  $cactus4  $barb  $cactus4    $barb  $cactus4  $clear  $lnend
+  $clear  $cactus1      $barb  $cactus1    $clear  $lnend  \
+$clear  $cactus2      $barb  $cactus2    $clear  $lnend  \
+$clear  $cactus3      $barb  $cactus3    $clear  $lnend  \
+$clear  $cactus4      $barb  $cactus4    $clear  $lnend
+  $clear    $cactus1  $barb  $cactus1    $clear    $lnend  \
+$clear    $cactus2  $barb  $cactus2    $clear    $lnend  \
+$clear    $cactus3  $barb  $cactus3    $clear    $lnend  \
+$clear    $cactus4  $barb  $cactus4    $clear    $lnend
+  $clear    $cactus1        $clear    $lnend  \
+$clear    $cactus2        $clear    $lnend  \
+$clear    $cactus3        $clear    $lnend  \
+$clear    $cactus4        $clear    $lnend
+"

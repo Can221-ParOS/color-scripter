@@ -1,0 +1,23 @@
+#!/bin/sh
+
+## Define a scale of colours in RGB format ##
+## Base Colour is hex: #1793d1 The tone scale used can be found
+#  on the Colour Hexa website, under the monochromatic scale ##
+
+blue=$'\e[48;2;15;99;140m'
+blue2=$'\e[48;2;18;115;163m'
+blue3=$'\e[48;2;20;131;186m'
+blue4=$'\e[48;2;23;147;209m'
+blue5=$'\e[48;2;28;162;230m'
+blue6=$'\e[48;2;51;172;232m'
+blue7=$'\e[48;2;73;181;235m'
+clear=$'\e[0m'
+
+## Create the graphic using the defined colours and spaces ##
+echo -e "
+$blue   $clear  $blue2   $clear  $blue3   $clear  $blue4   $clear  \
+$blue5   $clear  $blue6   $clear  $blue7   $clear 
+ $blue   $clear  $blue2   $clear  $blue3   $clear  $blue4   $clear  \
+$blue5   $clear  $blue6   $clear  $blue7   $clear 
+$blue   $clear  $blue2   $clear  $blue3   $clear  $blue4   $clear  \
+$blue5   $clear  $blue6   $clear  $blue7   $clear\n"

@@ -1,0 +1,23 @@
+#!/bin/sh
+
+## Define a scale of colours in RGB format ##
+## Base Colour is hex: #efa238 The tone scale used can be found
+#  on the Colour Hexa website, under the similar colour scale ##
+
+orng1=$'\e[48;2;239;116;56m'
+orng2=$'\e[48;2;239;132;56m'
+orng3=$'\e[48;2;239;147;56m'
+orng4=$'\e[48;2;239;162;56m'
+orng5=$'\e[48;2;239;177;56m'
+orng6=$'\e[48;2;239;193;56m'
+orng7=$'\e[48;2;239;208;56m'
+clear=$'\e[0m'
+
+## Create the graphic using the defined colours and spaces ##
+echo -e "
+$orng1   $clear  $orng2   $clear  $orng3   $clear  $orng4   $clear  \
+$orng5   $clear  $orng6   $clear  $orng7   $clear 
+ $orng1   $clear  $orng2   $clear  $orng3   $clear  $orng4   $clear  \
+$orng5   $clear  $orng6   $clear  $orng7   $clear 
+$orng1   $clear  $orng2   $clear  $orng3   $clear  $orng4   $clear  \
+$orng5   $clear  $orng6   $clear  $orng7   $clear\n"

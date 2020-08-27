@@ -1,0 +1,51 @@
+#!/bin/sh
+
+## Define a list of overly complicated RGB colors because I'm a sperg ##
+skull1=$'\e[48;2;81;130;169m' ## Blue   ##
+skull2=$'\e[48;2;120;81;169m' ## Purple ##
+skull3=$'\e[48;2;169;120;81m' ## Brown  ##
+skull4=$'\e[48;2;130;169;81m' ## Green  ##
+clear=$'\e[0m'              ## Blank space ##
+lnend=$'\e[0m'              ## Blank space, used to signify end of sprite
+                             # in a single line.
+
+## Draw pixel art using spaced and defined background colors ##
+
+echo -e " 
+  $clear    $skull1        $clear    $lnend  \
+$clear    $skull2        $clear    $lnend  \
+$clear    $skull3        $clear    $lnend  \
+$clear    $skull4        $clear    $lnend
+  $clear  $skull1            $clear  $lnend  \
+$clear  $skull2            $clear  $lnend  \
+$clear  $skull3            $clear  $lnend  \
+$clear  $skull4            $clear  $lnend
+  $skull1                $lnend  \
+$skull2                $lnend  \
+$skull3                $lnend  \
+$skull4                $lnend
+  $skull1    $clear  $skull1    $clear  $skull1    $lnend  \
+$skull2    $clear  $skull2    $clear  $skull2    $lnend  \
+$skull3    $clear  $skull3    $clear  $skull3    $lnend  \
+$skull4    $clear  $skull4    $clear  $skull4    $lnend
+  $skull1    $clear  $skull1    $clear  $skull1    $lnend  \
+$skull2    $clear  $skull2    $clear  $skull2    $lnend  \
+$skull3    $clear  $skull3    $clear  $skull3    $lnend  \
+$skull4    $clear  $skull4    $clear  $skull4    $lnend
+  $skull1                $lnend  \
+$skull2                $lnend  \
+$skull3                $lnend  \
+$skull4                $lnend
+  $clear  $skull1            $clear  $lnend  \
+$clear  $skull2            $clear  $lnend  \
+$clear  $skull3            $clear  $lnend  \
+$clear  $skull4            $clear  $lnend
+  $clear   $skull1  $clear  $skull1  $clear  $skull1  $clear  $lnend   \
+$clear   $skull2  $clear  $skull2  $clear  $skull2  $clear  $lnend   \
+$clear   $skull3  $clear  $skull3  $clear  $skull3  $clear  $lnend   \
+$clear   $skull4  $clear  $skull4  $clear  $skull4  $clear  $lnend  
+  $clear   $skull1  $clear  $skull1  $clear  $skull1  $clear  $lnend   \
+$clear   $skull2  $clear  $skull2  $clear  $skull2  $clear  $lnend   \
+$clear   $skull3  $clear  $skull3  $clear  $skull3  $clear  $lnend   \
+$clear   $skull4  $clear  $skull4  $clear  $skull4  $clear  $lnend  
+"

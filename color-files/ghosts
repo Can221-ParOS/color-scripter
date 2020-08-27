@@ -1,0 +1,47 @@
+#!/bin/sh
+
+## Define a list of overly complicated RGB colors because I'm a sperg ##
+ghost1=$'\e[48;2;70;56;239m'  ## Blue ##
+ghost2=$'\e[48;2;225;239;56m' ## Yellow ##
+ghost3=$'\e[48;2;56;225;239m' ## Cyan ##
+ghost4=$'\e[48;2;239;70;56m'  ## Red ##
+clear=$'\e[0m'                ## Blank space ##
+lnend=$'\e[0m'              ## Blank space used to signify end of sprite
+                             # in a single line.
+
+## Draw pixel art using spaced and defined background colors ##
+
+echo -e " 
+  $clear    $ghost1          $clear  $lnend  \
+$clear    $ghost2          $clear  $lnend  \
+$clear    $ghost3          $clear  $lnend  \
+$clear    $ghost4          $clear  $lnend
+  $clear  $ghost1  $clear    $ghost1  $clear    $ghost1  $lnend  \
+$clear  $ghost2  $clear    $ghost2  $clear    $ghost2  $lnend  \
+$clear  $ghost3  $clear    $ghost3  $clear    $ghost3  $lnend  \
+$clear  $ghost4  $clear    $ghost4  $clear    $ghost4  $lnend
+  $clear  $ghost1  $clear    $ghost1  $clear    $ghost1  $lnend  \
+$clear  $ghost2  $clear    $ghost2  $clear    $ghost2  $lnend  \
+$clear  $ghost3  $clear    $ghost3  $clear    $ghost3  $lnend  \
+$clear  $ghost4  $clear    $ghost4  $clear    $ghost4  $lnend  
+  $clear  $ghost1    $clear  $ghost1    $clear  $ghost1  $lnend  \
+$clear  $ghost2    $clear  $ghost2    $clear  $ghost2  $lnend  \
+$clear  $ghost3    $clear  $ghost3    $clear  $ghost3  $lnend  \
+$clear  $ghost4    $clear  $ghost4    $clear  $ghost4  $lnend  
+  $clear  $ghost1              $lnend  \
+$clear  $ghost2              $lnend  \
+$clear  $ghost3              $lnend  \
+$clear  $ghost4              $lnend  
+  $clear  $ghost1    $clear      $ghost1    $lnend  \
+$clear  $ghost2    $clear      $ghost2    $lnend  \
+$clear  $ghost3    $clear      $ghost3    $lnend  \
+$clear  $ghost4    $clear      $ghost4    $lnend
+  $clear  $ghost1              $lnend  \
+$clear  $ghost2              $lnend  \
+$clear  $ghost3              $lnend  \
+$clear  $ghost4              $lnend  
+  $clear  $ghost1  $clear  $ghost1  $clear  $ghost1  $clear  $ghost1  $lnend  \
+$clear  $ghost2  $clear  $ghost2  $clear  $ghost2  $clear  $ghost2  $lnend  \
+$clear  $ghost3  $clear  $ghost3  $clear  $ghost3  $clear  $ghost3  $lnend  \
+$clear  $ghost4  $clear  $ghost4  $clear  $ghost4  $clear  $ghost4  $lnend
+"

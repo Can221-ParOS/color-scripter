@@ -1,0 +1,47 @@
+#!/bin/sh
+
+## Define a list of overly complicated RGB colors because I'm a sperg ##
+blob=$'\e[48;2;239;56;133m' ## Pink ##
+wolf=$'\e[48;2;239;162;56m' ## Orange ##
+robo=$'\e[48;2;56;239;162m' ## Cyan ##
+wzrd=$'\e[48;2;56;133;239m' ## Blue ##
+clear=$'\e[0m'              ## Blank space ##
+lnend=$'\e[0m'              ## Blank space, used to signify end of sprite
+                             # in a single line.
+
+## Draw pixel art using spaced and defined background colors ##
+
+echo -e " 
+  $clear                $lnend  \
+$clear  $wolf  $clear          $wolf  $lnend  \
+$clear                $clear    \
+$clear  $wzrd  $clear        $wzrd  $clear  $lnend
+  $clear      $blob    $clear      $lnend  \
+$clear  $wolf    $clear      $wolf    $lnend  \
+$clear  $robo    $clear      $robo    $lnend    \
+$wzrd  $clear    $wzrd    $clear    $wzrd  $lnend
+  $clear    $blob        $clear    $lnend  \
+$clear  $wolf              $lnend  \
+$clear    $robo          $clear  $lnend    \
+$wzrd    $clear  $wzrd    $clear  $wzrd    $lnend
+  $clear  $blob            $clear  $lnend  \
+$clear  $wolf  $clear  $wolf      $clear  $wolf  $lnend  \
+$clear  $robo              $lnend    \
+$clear  $wzrd    $clear    $wzrd    $clear  $lnend
+  $blob                $lnend  \
+$clear  $wolf              $lnend  \
+$clear  $robo  $clear  $robo      $clear  $robo  $lnend    \
+$clear    $wzrd        $clear    $lnend
+  $blob  $clear    $blob    $clear    $blob  $lnend  \
+$clear    $wolf    $clear  $wolf    $clear  $lnend  \
+$clear  $robo              $lnend    \
+$clear    $wzrd        $clear    $lnend
+  $blob      $clear    $blob      $lnend  \
+$clear      $wolf  $clear  $wolf  $clear      $lnend  \
+$robo    $clear      $robo    $lnend    \
+$clear  $wzrd            $clear  $lnend
+  $blob                $lnend  \
+$clear        $wolf  $clear      $lnend  \
+$clear    $robo          $clear  $lnend    \
+$wzrd                $lnend
+"

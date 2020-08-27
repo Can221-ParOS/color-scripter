@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import random
+
+## Define location of Color Scripts to randomly select from ##
+script_dir = os.path.expanduser('~/color-scripter/colorfiles')
+
+## Create a list using the contents of the defined file path ##
+scripts = [f for f in os.listdir(script_dir)
+           if os.path.isfile(os.path.join(script_dir, f))]
+
+## Use different stages of random selection 
+ # to select the Color Script to display   ##
+sample1 = random.sample(scripts, 5)
+sample2 = random.sample(sample1, 3)
+choice = random.choice(sample2)
+
+## Join the defined file path and chosen script
+ # so it can be executed when this program runs ##
+script_to_run = script_dir + '/' + choice
+
+## Execute the randomly selected script ##
+os.system(script_to_run)

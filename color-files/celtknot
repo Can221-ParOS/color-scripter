@@ -1,0 +1,36 @@
+#!/bin/sh
+
+## Create a list of RGB colours to use. (each colour here has three tones) ##
+orng1=$'\e[48;2;249;148;57;1;30m'
+orng2=$'\e[48;2;237;135;33;1;30m'
+orng3=$'\e[48;2;226;122;18;1;30m'
+
+blue1=$'\e[48;2;170;189;202;1;30m'
+blue2=$'\e[48;2;154;176;183;1;30m'
+blue3=$'\e[48;2;138;164;183;1;30m'
+
+purp1=$'\e[48;2;160;79;241;39m'
+purp2=$'\e[48;2;148;56;239;38m'
+purp3=$'\e[48;2;135;32;237;39m'
+
+cyan1=$'\e[48;2;51;172;232;39m'
+cyan2=$'\e[48;2;28;162;230;38m'
+cyan3=$'\e[48;2;23;147;209;39m'
+
+## Prints/Echoes the ascii-art and uses the color variables to create images ##
+echo -e "\n $orng1    /\  /\  /\    \e[0m  $blue1    /\  /\  /\    \e[0m  \
+$purp1    /\  /\  /\    \e[0m  $cyan1    /\  /\  /\    \e[0m  
+ $orng1   /  \/  \/  \   \e[0m  $blue1   /  \/  \/  \   \e[0m  \
+$purp1   /  \/  \/  \   \e[0m  $cyan1   /  \/  \/  \   \e[0m  
+ $orng2  / /\/ /\/ /\ \  \e[0m  $blue2  / /\/ /\/ /\ \  \e[0m  \
+$purp2  / /\/ /\/ /\ \  \e[0m  $cyan2  / /\/ /\/ /\ \  \e[0m  
+ $orng2 / / / /\/ /\ \ \ \e[0m  $blue2 / / / /\/ /\ \ \ \e[0m  \
+$purp2 / / / /\/ /\ \ \ \e[0m  $cyan2 / / / /\/ /\ \ \ \e[0m  
+ $orng2 \ \ \/ /\/ / / / \e[0m  $blue2 \ \ \/ /\/ / / / \e[0m  \
+$purp2 \ \ \/ /\/ / / / \e[0m  $cyan2 \ \ \/ /\/ / / / \e[0m  
+ $orng3  \ \/ /\/ /\/ /  \e[0m  $blue3  \ \/ /\/ /\/ /  \e[0m  \
+$purp3  \ \/ /\/ /\/ /  \e[0m  $cyan3  \ \/ /\/ /\/ /  \e[0m  
+ $orng3   \  /\  /\  /   \e[0m  $blue3   \  /\  /\  /   \e[0m  \
+$purp3   \  /\  /\  /   \e[0m  $cyan3   \  /\  /\  /   \e[0m  
+ $orng3    \/  \/  \/    \e[0m  $blue3    \/  \/  \/    \e[0m  \
+$purp3    \/  \/  \/    \e[0m  $cyan3    \/  \/  \/    \e[0m  \n"
