@@ -1,5 +1,6 @@
 # color-scripter
 A small python script that selects a random color script from a directory, and runs it to display it in the terminal. For Unix based operating systems only. 
+
 (Also works in a TTY! Fancy!)
 
 The program loads colorscripts from the 
