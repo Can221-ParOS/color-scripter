@@ -5,7 +5,7 @@ import os
 import random
 
 ## Define location of Color Scripts to randomly select from ##
-script_dir = os.path.expanduser('~/color-scripter/colorfiles')
+script_dir = os.path.expanduser('~/color-scripter/color-files')
 
 ## Create a list using the contents of the defined file path ##
 scripts = [f for f in os.listdir(script_dir)
