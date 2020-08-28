@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 ## Define a list of overly complicated RGB colors ##
 cactus1=$'\e[48;2;26;255;64m'    ## HEX - #1aff40 ##

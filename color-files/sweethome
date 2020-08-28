@@ -1,0 +1,58 @@
+#!/bin/sh
+
+home=$'\e[48;2;219;164;86m'
+sweet=$'\e[48;2;86;141;219m'
+clear=$'\e[0m'
+lnend=$'\e[0m'
+
+echo -e "  
+$clear            $lnend\
+$clear            $home  $lnend
+  $clear            $lnend\
+$clear        $home  $clear  $lnend
+  $clear  $home    $clear    $home  $lnend\
+$clear      $home  $clear  $lnend
+  $home  $clear    $home    $clear $lnend\
+$clear     $home  $clear    $lnend
+  $clear            $lnend\
+$clear  $home  $clear      $lnend
+  $clear            $lnend\
+$home  $clear          $lnend\n
+\n  $sweet          $clear  $lnend\
+$sweet  $clear      $sweet  $lnend  \
+$sweet          $lnend  \
+$sweet          $lnend  \
+$sweet          $lnend
+  $sweet  $clear          $lnend\
+$sweet  $clear      $sweet  $clear  $lnend\
+$sweet  $clear        $lnend  \
+$sweet  $clear        $lnend  \
+$clear    $sweet  $clear    $lnend
+  $sweet          $lnend\
+$clear  $sweet  $clear      $sweet  $lnend  \
+$sweet       $clear   $lnend  \
+$sweet       $clear   $lnend  \
+$clear    $sweet  $clear  $lnend
+  $clear        $sweet  $lnend\
+$clear  $sweet  $clear  $sweet  $clear  $sweet  $lnend  \
+$sweet  $clear        $lnend  \
+$sweet  $clear        $lnend  \
+$clear    $sweet  $clear    $lnend
+  $sweet          $lnend\
+$clear  $sweet    $clear  $sweet    $lnend  \
+$sweet          $lnend  \
+$sweet          $lnend  \
+$clear    $sweet  $clear    $lnend\n
+\n$clear            $lnend\
+$clear            $home  $lnend
+  $clear            $lnend\
+$clear        $home  $clear  $lnend
+  $clear  $home    $clear    $home  $lnend\
+$clear      $home  $clear  $lnend
+  $home  $clear    $home    $clear $lnend\
+$clear     $home  $clear    $lnend
+  $clear            $lnend\
+$clear  $home  $clear      $lnend
+  $clear            $lnend\
+$home  $clear          $lnend
+  "

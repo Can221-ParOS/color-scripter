@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 ## Define a list of overly complicated RGB colors ##
 blob=$'\e[48;2;239;56;133m' ## Pink ##

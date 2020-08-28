@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 ## Define a list of overly complicated RGB colors ##
 skull1=$'\e[48;2;81;130;169m' ## Blue   ##
