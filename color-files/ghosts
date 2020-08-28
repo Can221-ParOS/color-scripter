@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/zsh
 
-## Define a list of overly complicated RGB colors because I'm a sperg ##
+## Define a list of overly complicated RGB colors ##
 ghost1=$'\e[48;2;70;56;239m'  ## Blue ##
 ghost2=$'\e[48;2;225;239;56m' ## Yellow ##
 ghost3=$'\e[48;2;56;225;239m' ## Cyan ##

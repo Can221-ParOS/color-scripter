@@ -1,0 +1,43 @@
+#!/bin/sh
+
+purp=$'\e[48;2;164;86;219m'
+gren=$'\e[48;2;86;219;98m'
+orng=$'\e[48;2;219;164;86m'
+blue=$'\e[48;2;86;141;219m'
+cyan=$'\e[48;2;86;219;164m'
+pink=$'\e[48;2;219;6;141m'
+clear=$'\e[0m'
+lnend=$'\e[0m'
+
+echo -e "
+  $clear  $purp  $clear  $purp  $clear  $lnend\
+$clear  $gren  $clear  $lnend\
+$clear  $orng  $clear  $orng  $clear  $lnend\
+$clear  $blue  $clear  $lnend\
+$clear  $cyan  $clear  $cyan  $clear  $lnend\
+$clear  $pink  $clear    $lnend
+  $purp          $clear$lnend\
+$clear  $gren  $clear  $lnend\
+$orng          $lnend\
+$clear  $blue  $clear  $lnend\
+$cyan          $lnend\
+$clear  $pink  $clear    $lnend 
+  $clear  $purp  $clear  $purp  $clear  $lnend\
+$clear  $gren  $clear  $lnend\
+$clear  $orng  $clear  $orng  $clear  $lnend\
+$clear  $blue  $clear  $lnend\
+$clear  $cyan  $clear  $cyan  $clear  $lnend\
+$clear  $pink  $clear  $lnend 
+  $purp          $lnend\
+$clear      $lnend\
+$orng          $lnend\
+$clear      $lnend\
+$cyan          $lnend\
+$clear      $lnend
+  $clear  $purp  $clear  $purp  $clear  $lnend\
+$clear  $gren  $clear  $lnend\
+$clear  $orng  $clear  $orng  $clear  $lnend\
+$clear  $blue  $clear  $lnend\
+$clear  $cyan  $clear  $cyan  $clear  $lnend\
+$clear  $pink  $clear  $lnend 
+  "

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/zsh
 
-## Define a list of overly complicated RGB colors because I'm a sperg ##
+## Define a list of overly complicated RGB colors ##
 cactus1=$'\e[48;2;26;255;64m'    ## HEX - #1aff40 ##
 cactus2=$'\e[48;2;77;255;107m'   ## HEX - #4dff6b ##
 cactus3=$'\e[48;2;52;255;85m'    ## HEX - 34ff55  ##
